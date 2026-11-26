@@ -14,6 +14,10 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    compileOnly("com.github.spotbugs:spotbugs-annotations:4.10.5")
+}
+
 application {
     mainClass.set("it.unibo.mvc.LaunchApp")
 }

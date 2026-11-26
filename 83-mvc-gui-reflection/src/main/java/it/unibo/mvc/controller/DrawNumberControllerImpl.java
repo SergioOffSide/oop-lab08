@@ -1,5 +1,7 @@
 package it.unibo.mvc.controller;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 import it.unibo.mvc.api.DrawNumber;
 import it.unibo.mvc.api.DrawNumberController;
 import it.unibo.mvc.api.DrawNumberView;
@@ -48,6 +50,10 @@ public final class DrawNumberControllerImpl implements DrawNumberController {
         this.model.reset();
     }
 
+    @SuppressFBWarnings(
+        value = "DM_EXIT",
+        justification = "Acceptable for exercising purposes."
+    )
     @Override
     public void quit() {
         /*
