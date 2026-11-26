@@ -94,7 +94,7 @@ public final class DrawNumberSwingView implements DrawNumberView {
 
     @SuppressFBWarnings(
         value = "EI_EXPOSE_REP2",
-        justification = "PrintStream stored by purpose for output operations"
+        justification = "DrawNumberController stored by purpose"
     )
     @Override
     public void setController(final DrawNumberController observer) {
